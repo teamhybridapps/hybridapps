@@ -1,760 +1,837 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Hybrid Apps</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/style.min.css" rel="stylesheet">
-  <style type="text/css">
-    /* Necessary for full page carousel*/
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-    }
+    <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Home</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
-    /* Carousel*/
-    .carousel,
-    .carousel-item,
-    .carousel-item.active {
-      height: 100%;
-    }
-    .carousel-inner {
-      height: 100%;
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-          background: #1C2331!important;
-      }
-  }
-
-  </style>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#primary-menu">
 
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
-
-      <!-- Brand -->
-      <a class="navbar-brand" href="#">
-        <strong>Hybrid Apps</strong>
-      </a>
-
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Left -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Contact</a>
-          </li>
-        </ul>
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link border border-light rounded waves-effect waves-light"
-              target="_blank">
-              <i class="fa fa-github mr-2">Portfolio</i>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-    </div>
-  </nav>
-  <!-- Navbar -->
-  <!-- data-ride="carousel" -->
-  <!--Carousel Wrapper-->
-  <div id="carousel-example-1z" class="carousel slide carousel-fade">
-
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-
-      <!--First slide-->
-      <div class="carousel-item active">
-        <div class="view">
-
-          <!--Video source-->
-          <video class="video-intro" autoplay loop>
-            <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
-          </video>
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>DESIGN . DEVELOP . PUBLISH</strong>
-              </h1>
-
-              <p>
-                <strong>We design and develop web and mobile apps. </strong>
-              </p>
-
-              <p class="mb-4 d-none d-md-block">
-                <strong>We create highly polished Web,iPhone & Android apps for startups and enterprise clients.
-                   We also know a thing or two about branding, websites, and user acquisition.</strong>
-              </p>
-
-              <a target="_blank" href="" class="btn btn-outline-white btn-lg">lets start are new project
-                  <i class="fa fa-graduation-cap ml-2"></i>
-              </a>
-            </div>
-            <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
+    <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
         </div>
-      </div>
-      <!--/First slide-->
-
-      <!--Second slide-->
-      <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-             <!-- Content -->
-             <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong>DESIGN . DEVELOP . PUBLISH</strong>
-                </h1>
-  
-                <p>
-                  <strong>We design and develop web and mobile apps. </strong>
-                </p>
-  
-                <p class="mb-4 d-none d-md-block">
-                  <strong>We create highly polished Web,iPhone & Android apps for startups and enterprise clients.
-                     We also know a thing or two about branding, websites, and user acquisition.</strong>
-                </p>
-  
-                <a target="_blank" href="" class="btn btn-outline-white btn-lg">lets start are new project
-                    <i class="fa fa-graduation-cap ml-2"></i>
+    </div>
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand logo">
+                    <h2>Hybrid Apps</h2>
                 </a>
-              </div>
-              <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
+            </div>
+            <!--Logo/-->
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home-page">Home</a></li>
+                    <li><a href="#service-page">Service</a></li>
+                    <li><a href="#feature-page">Features</a></li>
+                    <li><a href="#price-page">Pricing</a></li>
+                    <li><a href="#team-page">Team</a></li>
+                    <li><a href="#faq-page">FAQ</a></li>
+                    <li><a href="#blog-page">Blog</a></li>
+                    <li><a href="#contact-page">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-      <!--/Second slide-->
-
-      <!--Third slide-->
-      <div class="carousel-item">
-        <div class="view">
-
-          <!--Video source-->
-          <video class="video-intro" autoplay loop>
-              <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
-          </video>
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-             <!-- Content -->
-             <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong>DESIGN . DEVELOP . PUBLISH</strong>
-                </h1>
-  
-                <p>
-                  <strong>We design and develop web and mobile apps. </strong>
-                </p>
-  
-                <p class="mb-4 d-none d-md-block">
-                  <strong>We create highly polished Web,iPhone & Android apps for startups and enterprise clients.
-                     We also know a thing or two about branding, websites, and user acquisition.</strong>
-                </p>
-  
-                <a target="_blank" href="" class="btn btn-outline-white btn-lg">lets start are new project
-                    <i class="fa fa-graduation-cap ml-2"></i>
-                </a>
-              </div>
-              <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
-        </div>
-      </div>
-      <!--/Third slide-->
-
     </div>
-    <!--/.Slides-->
+    <!--Mainmenu-area/-->
 
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
 
-  </div>
-  <!--/.Carousel Wrapper-->
 
-  <!--Main layout-->
-  <main>
-    <div class="container">
-
-      <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn">
-
-        <!--Grid row-->
-        <div class="row">
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="">
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <!-- Main heading -->
-            <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
-            <p>This template is created with Material Design for Bootstrap (
-              <strong>MDB</strong> ) framework.</p>
-            <p>Read details below to learn more about MDB.</p>
-            <!-- Main heading -->
-
-            <hr>
-
-            <p>
-              <strong>400+</strong> material UI elements,
-              <strong>600+</strong> material icons,
-              <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-              <strong>Free for personal and commercial use.</strong>
-            </p>
-
-            <!-- CTA -->
-            <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-grey btn-md">Download
-              <i class="fa fa-download ml-1"></i>
-            </a>
-            <a target="_blank" href="https://mdbootstrap.com/components/" class="btn btn-grey btn-md">Live demo
-              <i class="fa fa-image ml-1"></i>
-            </a>
-
-          </div>
-          <!--Grid column-->
-
+    <!--Header-area-->
+    <header class="header-area overlay full-height relative v-center" id="home-page">
+        <div class="absolute anlge-bg"></div>
+        <div class="container">
+            <div class="row v-center">
+                <div class="col-xs-12 col-md-7 header-text">
+                    <h2>It’s all about Promoting your Business</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ex inventore vel error quibusdam animi fugiat, doloribus dolores consectetur nulla deleniti sint blanditiis quod debitis quis vitae officiis tempora numquam.</p>
+                    <a href="#" class="button white">Watch video</a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-5 text-right">
+                    <div class="screen-box screen-slider">
+                        <div class="item">
+                            <img src="images/screen-1.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/screen-2.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/screen-3.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/screen-4.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/screen-5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--Grid row-->
+    </header>
+    <!--Header-area/-->
 
-      </section>
-      <!--Section: Main info-->
 
-      <hr class="my-5">
 
-      <!--Section: Main features & Quick Start-->
-      <section>
-
-        <h3 class="h3 text-center mb-5">About MDB</h3>
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 px-4">
-
-            <!--First row-->
+    <!--Feature-area-->
+    <section class="gray-bg section-padding" id="service-page">
+        <div class="container">
             <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fa fa-code fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Bootstrap 4</h5>
-                <p class="grey-text">Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.</p>
-              </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/service-icon-1.png" alt="">
+                        </div>
+                        <h4>EASY TO USE</h4>
+                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/service-icon-2.png" alt="">
+                        </div>
+                        <h4>AWESOEM DESIGN</h4>
+                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/service-icon-3.png" alt="">
+                        </div>
+                        <h4>EASY TO CUSTOMAIZE</h4>
+                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                    </div>
+                </div>
             </div>
-            <!--/First row-->
-
-            <div style="height:30px"></div>
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fa fa-book fa-2x blue-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Detailed documentation</h5>
-                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help you to implement your ideas
-                  easily.
-                </p>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <div style="height:30px"></div>
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fa fa-graduation-cap fa-2x cyan-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Lots of tutorials</h5>
-                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials, which allow you to learn
-                  how to use MDB as well as other technologies.</p>
-              </div>
-            </div>
-            <!--/Third row-->
-
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
-
-            <p class="h5 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
-            </div>
-          </div>
-          <!--/Grid column-->
-
         </div>
-        <!--/Grid row-->
+    </section>
+    <!--Feature-area/-->
 
-      </section>
-      <!--Section: Main features & Quick Start-->
-
-      <hr class="my-5">
-
-      <!--Section: Not enough-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">Not enough?</h2>
-
-        <!--First row-->
-        <div class="row features-small mb-5 mt-3 wow fadeIn">
-
-          <!--First column-->
-          <div class="col-md-4">
-            <!--First row-->
+    <section class="angle-bg sky-bg section-padding">
+        <div class="container">
             <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Free for personal and commercial use</h6>
-                <p class="grey-text">Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.
-                </p>
-                <div style="height:15px"></div>
-              </div>
+                <div class="col-xs-12">
+                    <div id="caption_slide" class="carousel slide caption-slider" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active row">
+                                <div class="v-center">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-title" data-animation="animated fadeInUp">
+                                            <h2>Easy to build</h2>
+                                        </div>
+                                        <div class="caption-desc" data-animation="animated fadeInUp">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                        </div>
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a href="#" class="button">Read more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="caption-photo one" data-animation="animated fadeInRight">
+                                            <img src="images/screen-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="caption-photo two" data-animation="animated fadeInRight">
+                                            <img src="images/screen-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item row">
+                                <div class="v-center">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-title" data-animation="animated fadeInUp">
+                                            <h2>Easy to use</h2>
+                                        </div>
+                                        <div class="caption-desc" data-animation="animated fadeInUp">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                        </div>
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a href="#" class="button">Read more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="caption-photo one" data-animation="animated fadeInRight">
+                                            <img src="images/screen-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="caption-photo two" data-animation="animated fadeInRight">
+                                            <img src="images/screen-4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item row">
+                                <div class="v-center">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-title" data-animation="animated fadeInUp">
+                                            <h2>Easy to customize</h2>
+                                        </div>
+                                        <div class="caption-desc" data-animation="animated fadeInUp">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                        </div>
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a href="#" class="button">Read more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="caption-photo one" data-animation="animated fadeInRight">
+                                            <img src="images/screen-7.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="caption-photo two" data-animation="animated fadeInRight">
+                                            <img src="images/screen-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item row">
+                                <div class="v-center">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="caption-title" data-animation="animated fadeInUp">
+                                            <h2>Awesome design</h2>
+                                        </div>
+                                        <div class="caption-desc" data-animation="animated fadeInUp">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                                        </div>
+                                        <div class="caption-button" data-animation="animated fadeInUp">
+                                            <a href="#" class="button">Read more</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="caption-photo one" data-animation="animated fadeInRight">
+                                            <img src="images/screen-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <div class="caption-photo two" data-animation="animated fadeInRight">
+                                            <img src="images/screen-4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators caption-indector">
+                            <li data-target="#caption_slide" data-slide-to="0" class="active">
+                                <strong>Lorem ipsum </strong>consectetur adipisicing elit.
+                            </li>
+                            <li data-target="#caption_slide" data-slide-to="1">
+                                <strong>Lorem ipsum </strong>consectetur adipisicing elit.
+                            </li>
+                            <li data-target="#caption_slide" data-slide-to="2">
+                                <strong>Lorem ipsum </strong>consectetur adipisicing elit.
+                            </li>
+                            <li data-target="#caption_slide" data-slide-to="3">
+                                <strong>Lorem ipsum </strong>consectetur adipisicing elit.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">400+ UI elements</h6>
-                <p class="grey-text">An impressive collection of flexible components allows you to develop any project.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">600+ icons</h6>
-                <p class="grey-text">Hundreds of useful, scalable, vector icons at your disposal.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Fully responsive</h6>
-                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB
-                  looks great on each screen.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/First column-->
-
-          <!--Second column-->
-          <div class="col-md-4 flex-center">
-            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
-          </div>
-          <!--/Second column-->
-
-          <!--Third column-->
-          <div class="col-md-4 mt-2">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">70+ CSS animations</h6>
-                <p class="grey-text">Neat and easy to use animations, which will increase the interactivity of your project and delight your visitors.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Plenty of useful templates</h6>
-                <p class="grey-text">Need inspiration? Use one of our predefined templates for free.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy installation</h6>
-                <p class="grey-text">5 minutes, a few clicks and... done. You will be surprised at how easy it is.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy to use and customize</h6>
-                <p class="grey-text">Using MDB is straightforward and pleasant. Components flexibility allows you deep customization. You will
-                  easily adjust each component to suit your needs.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/Third column-->
-
         </div>
-        <!--/First row-->
+    </section>
 
-      </section>
-      <!--Section: Not enough-->
 
-      <hr class="mb-5">
 
-      <!--Section: More-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">...and even more</h2>
-
-        <!--First row-->
-        <div class="row features-small mt-5 wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
+    <section class="gray-bg section-padding" id="feature-page">
+        <div class="container">
             <div class="row">
-              <div class="col-2">
-                <i class="fa fa-firefox fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2 pl-3">
-                <h5 class="feature-title font-bold mb-1">Cross-browser compatibility</h5>
-                <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers; all browsers love MDB.
-                </p>
-              </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>SPECIAL FEATURES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
+                    </div>
+                </div>
             </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
             <div class="row">
-              <div class="col-2">
-                <i class="fa fa-level-up fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Frequent updates</h5>
-                <p class="grey-text mt-2">MDB becomes better every month. We love the project and enhance as much as possible.
-                </p>
-              </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-1.png" alt="">
+                        </div>
+                        <h3>Creative Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-2.png" alt="">
+                        </div>
+                        <h3>Unlimited Features</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-3.png" alt="">
+                        </div>
+                        <h3>Full Free Chat</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-4.png" alt="">
+                        </div>
+                        <h3>Retina ready</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-5.png" alt="">
+                        </div>
+                        <h3>High Resolution</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="images/portfolio-icon-6.png" alt="">
+                        </div>
+                        <h3>Clean Codes</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </div>
             </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-comments-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Active community</h5>
-                <p class="grey-text mt-2">Our society grows day by day. Visit our forum and check how it is to be a part of our family.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">jQuery 3.x</h5>
-                <p class="grey-text mt-2">MDB is integrated with newest jQuery. Therefore you can use all the latest features which come along with
-                  it.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
         </div>
-        <!--/First row-->
+    </section>
 
-        <!--Second row-->
-        <div class="row features-small mt-4 wow fadeIn">
 
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
+
+
+    <section class="price-area overlay section-padding" id="price-page">
+        <div class="container">
             <div class="row">
-              <div class="col-2">
-                <i class="fa fa-cubes fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Modularity</h5>
-                <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as
-                  well as modules for CSS (SASS files) and JS.</p>
-              </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Afortable Price</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
+                    </div>
+                </div>
             </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
             <div class="row">
-              <div class="col-2">
-                <i class="fa fa-question fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Technical support</h5>
-                <p class="grey-text mt-2">We care about reliability. If you have any questions - do not hesitate to contact us.
-                </p>
-              </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-table">
+                        <h3 class="text-uppercase price-title">Basic</h3>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><strong class="amount">$ <span class="big">20</span></strong>/Month</li>
+                            <li>100 MB Disk Space</li>
+                            <li>2 Subdomains</li>
+                            <li>5 Email Accounts</li>
+                            <li>Webmail Support</li>
+                            <li>Customer Support 24/7</li>
+                        </ul>
+                        <hr>
+                        <a href="#" class="button">Purchase</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-table active">
+                        <span class="price-info"><span class="ti-crown"></span></span>
+                        <h3 class="text-uppercase price-title">STABDARD</h3>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><strong class="amount">$ <span class="big">39</span></strong>/Month</li>
+                            <li>100 MB Disk Space</li>
+                            <li>2 Subdomains</li>
+                            <li>5 Email Accounts</li>
+                            <li>Webmail Support</li>
+                            <li>Customer Support 24/7</li>
+                        </ul>
+                        <hr>
+                        <a href="#" class="button">Purchase</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-table">
+                        <h3 class="text-uppercase price-title">UNLIMITED</h3>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><strong class="amount">$ <span class="big">59</span></strong>/Month</li>
+                            <li>100 MB Disk Space</li>
+                            <li>2 Subdomains</li>
+                            <li>5 Email Accounts</li>
+                            <li>Webmail Support</li>
+                            <li>Customer Support 24/7</li>
+                        </ul>
+                        <hr>
+                        <a href="#" class="button">Purchase</a>
+                    </div>
+                </div>
             </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-th fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Flexbox</h5>
-                <p class="grey-text mt-2">MDB fully supports Flex Box. You can forget about alignment issues.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-file-code-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">SASS files</h5>
-                <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
         </div>
-        <!--/Second row-->
+    </section>
 
-      </section>
-      <!--Section: More-->
 
-    </div>
-  </main>
-  <!--Main layout-->
 
-  <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+    <section class="section-padding gray-bg" id="team-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Special team</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-team">
+                        <div class="team-photo">
+                            <img src="images/team-section-1.png" alt="">
+                        </div>
+                        <h4>JEMY SEDONCE</h4>
+                        <h6>Co. Founder</h6>
+                        <ul class="social-menu">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-team">
+                        <div class="team-photo">
+                            <img src="images/team-section-2.png" alt="">
+                        </div>
+                        <h4>DEBORAH BROWN</h4>
+                        <h6>UX Designer</h6>
+                        <ul class="social-menu">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-team">
+                        <div class="team-photo">
+                            <img src="images/team-section-3.png" alt="">
+                        </div>
+                        <h4>HARRY BANKS</h4>
+                        <h6>Founder</h6>
+                        <ul class="social-menu">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single-team">
+                        <div class="team-photo">
+                            <img src="images/team-section-4.png" alt="">
+                        </div>
+                        <h4>VICTORIA CLARK</h4>
+                        <h6>Creative Director</h6>
+                        <ul class="social-menu">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
-        <i class="fa fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
-        <i class="fa fa-graduation-cap ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
 
-    <hr class="my-4">
 
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fa fa-facebook mr-3"></i>
-      </a>
 
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fa fa-twitter mr-3"></i>
-      </a>
+    <section class="testimonial-area section-padding gray-bg overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Client says</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="testimonials">
+                        <div class="testimonial">
+                            <div class="testimonial-photo">
+                                <img src="images/avatar-small-1.png" alt="">
+                            </div>
+                            <h3>AR Rahman</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-photo">
+                                <img src="images/avatar-small-2.png" alt="">
+                            </div>
+                            <h3>AR Rahman</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-photo">
+                                <img src="images/avatar-small-3.png" alt="">
+                            </div>
+                            <h3>AR Rahman</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-photo">
+                                <img src="images/avatar-small-4.png" alt="">
+                            </div>
+                            <h3>AR Rahman</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-photo">
+                                <img src="images/avatar-small-5.png" alt="">
+                            </div>
+                            <h3>AR Rahman</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-photo">
+                                <img src="images/avatar-small-6.png" alt="">
+                            </div>
+                            <h3>AR Rahman</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fa fa-youtube mr-3"></i>
-      </a>
 
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fa fa-google-plus mr-3"></i>
-      </a>
 
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fa fa-dribbble mr-3"></i>
-      </a>
 
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fa fa-pinterest mr-3"></i>
-      </a>
 
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fa fa-github mr-3"></i>
-      </a>
 
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fa fa-codepen mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
+    <section class="gray-bg section-padding" id="faq-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">Sedeiusmod tempor inccsetetur aliquatraiy?</a>
+                            </h4>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodas temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrd exercitation ullamco laboris nisi ut aliquip ex comodo consequat. Duis aute dolor in reprehenderit.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Tempor inccsetetur aliquatraiy?</a>
+                            </h4>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodas temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrd exercitation ullamco laboris nisi ut aliquip ex comodo consequat. Duis aute dolor in reprehenderit.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Lorem ipsum dolor amet, consectetur adipisicing ?</a>
+                            </h4>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodas temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrd exercitation ullamco laboris nisi ut aliquip ex comodo consequat. Duis aute dolor in reprehenderit.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Lorem ipsum dolor amet, consectetur adipisicing ?</a>
+                            </h4>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodas temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrd exercitation ullamco laboris nisi ut aliquip ex comodo consequat. Duis aute dolor in reprehenderit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      © 2018 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
-    </div>
-    <!--/.Copyright-->
 
-  </footer>
-  <!--/.Footer-->
 
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-  </script>
+
+
+
+
+
+    <section class="section-padding overlay client-area overlay" id="client-page">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <div class="clients">
+                        <div class="item">
+                            <img src="images/themeforest.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/coadcanyon.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/graphicriver.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/docean.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/audiojungle.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/actividen.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/photodone.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/videgub.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/themeforest.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/coadcanyon.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/graphicriver.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/docean.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/audiojungle.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/actividen.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/photodone.gif" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/videgub.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-padding gray-bg" id="blog-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="single-blog">
+                        <div class="blog-photo">
+                            <img src="images/small1.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
+                            <ul class="blog-meta">
+                                <li><span class="ti-user"></span> <a href="#">Admin</a></li>
+                                <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="single-blog">
+                        <div class="blog-photo">
+                            <img src="images/small2.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
+                            <ul class="blog-meta">
+                                <li><span class="ti-user"></span> <a href="#">Admin</a></li>
+                                <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="single-blog">
+                        <div class="blog-photo">
+                            <img src="images/small3.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
+                            <ul class="blog-meta">
+                                <li><span class="ti-user"></span> <a href="#">Admin</a></li>
+                                <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer-area relative sky-bg" id="contact-page">
+        <div class="absolute footer-bg"></div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title">
+                            <h2>Contact with us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <address class="side-icon-boxes">
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/location-arrow.png" alt="">
+                                </div>
+                                <p><strong>Address: </strong> Box 564, Disneyland <br />USA</p>
+                            </div>
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/phone-arrow.png" alt="">
+                                </div>
+                                <p><strong>Telephone: </strong>
+                                    <a href="callto:8801812726495">+8801812726495</a> <br />
+                                    <a href="callto:8801687420471">+8801687420471</a>
+                                </p>
+                            </div>
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/mail-arrow.png" alt="">
+                                </div>
+                                <p><strong>E-mail: </strong>
+                                    <a href="mailto:youremail@example.com">youremail@example.com</a> <br />
+                                    <a href="mailto:youremail@example.com">example@mail.com</a>
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                            <div class="form-double">
+                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
+                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
+                            </div>
+                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
+                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
+                            <button type="sibmit" class="button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 pull-right">
+                        <ul class="social-menu text-right x-left">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-google"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ti-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id corrupti architecto consequuntur, laborum quaerat sed nemo temporibus unde, beatae vel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>&copy;Copyright 2018 All right resurved.  This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
